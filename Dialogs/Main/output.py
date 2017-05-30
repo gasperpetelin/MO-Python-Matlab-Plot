@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'C:\Users\gasper\Desktop\objectivePlot\untitled.ui'
+#
+# Created by: PyQt5 UI code generator 5.6
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(942, 811)
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(Form)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.mainVerticalLayout = QtWidgets.QVBoxLayout()
+        self.mainVerticalLayout.setObjectName("mainVerticalLayout")
+        self.graphHolderGridLayout = QtWidgets.QGridLayout()
+        self.graphHolderGridLayout.setObjectName("graphHolderGridLayout")
+        self.mainVerticalLayout.addLayout(self.graphHolderGridLayout)
+        self.gridLayout = QtWidgets.QGridLayout()
+        self.gridLayout.setObjectName("gridLayout")
+        self.lblCurrentGeneration = QtWidgets.QLabel(Form)
+        self.lblCurrentGeneration.setMinimumSize(QtCore.QSize(25, 0))
+        self.lblCurrentGeneration.setObjectName("lblCurrentGeneration")
+        self.gridLayout.addWidget(self.lblCurrentGeneration, 0, 1, 1, 1)
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
+        self.label_3 = QtWidgets.QLabel(Form)
+        self.label_3.setObjectName("label_3")
+        self.gridLayout.addWidget(self.label_3, 1, 0, 1, 1)
+        self.sldGenerations = QtWidgets.QSlider(Form)
+        self.sldGenerations.setEnabled(False)
+        self.sldGenerations.setMaximum(30)
+        self.sldGenerations.setOrientation(QtCore.Qt.Horizontal)
+        self.sldGenerations.setTickPosition(QtWidgets.QSlider.TicksBelow)
+        self.sldGenerations.setTickInterval(1)
+        self.sldGenerations.setObjectName("sldGenerations")
+        self.gridLayout.addWidget(self.sldGenerations, 0, 2, 1, 1)
+        self.lblCurrentFront = QtWidgets.QLabel(Form)
+        self.lblCurrentFront.setMinimumSize(QtCore.QSize(25, 0))
+        self.lblCurrentFront.setObjectName("lblCurrentFront")
+        self.gridLayout.addWidget(self.lblCurrentFront, 1, 1, 1, 1)
+        self.sldFront = QtWidgets.QSlider(Form)
+        self.sldFront.setEnabled(False)
+        self.sldFront.setMaximum(30)
+        self.sldFront.setOrientation(QtCore.Qt.Horizontal)
+        self.sldFront.setTickPosition(QtWidgets.QSlider.TicksBelow)
+        self.sldFront.setObjectName("sldFront")
+        self.gridLayout.addWidget(self.sldFront, 1, 2, 1, 1)
+        self.lblCurrentFile = QtWidgets.QLabel(Form)
+        self.lblCurrentFile.setText("")
+        self.lblCurrentFile.setObjectName("lblCurrentFile")
+        self.gridLayout.addWidget(self.lblCurrentFile, 2, 1, 1, 1)
+        self.btnOpenFile = QtWidgets.QPushButton(Form)
+        self.btnOpenFile.setObjectName("btnOpenFile")
+        self.gridLayout.addWidget(self.btnOpenFile, 2, 0, 1, 1)
+        self.checkboxHolderLayout = QtWidgets.QHBoxLayout()
+        self.checkboxHolderLayout.setObjectName("checkboxHolderLayout")
+        self.gridLayout.addLayout(self.checkboxHolderLayout, 2, 2, 1, 1)
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.rbtnFixed = QtWidgets.QRadioButton(Form)
+        self.rbtnFixed.setObjectName("rbtnFixed")
+        self.verticalLayout_3.addWidget(self.rbtnFixed)
+        self.rbtnDynamic = QtWidgets.QRadioButton(Form)
+        self.rbtnDynamic.setChecked(True)
+        self.rbtnDynamic.setObjectName("rbtnDynamic")
+        self.verticalLayout_3.addWidget(self.rbtnDynamic)
+        self.gridLayout.addLayout(self.verticalLayout_3, 3, 2, 1, 1)
+        self.label_2 = QtWidgets.QLabel(Form)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 3, 0, 1, 1)
+        self.mainVerticalLayout.addLayout(self.gridLayout)
+        self.verticalLayout_2.addLayout(self.mainVerticalLayout)
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.lblCurrentGeneration.setText(_translate("Form", "All"))
+        self.label.setText(_translate("Form", "Generation"))
+        self.label_3.setText(_translate("Form", "Front"))
+        self.lblCurrentFront.setText(_translate("Form", "All"))
+        self.btnOpenFile.setText(_translate("Form", "Open file"))
+        self.rbtnFixed.setText(_translate("Form", "Fixed"))
+        self.rbtnDynamic.setText(_translate("Form", "Dynamic"))
+        self.label_2.setText(_translate("Form", "Axis limits"))
+
